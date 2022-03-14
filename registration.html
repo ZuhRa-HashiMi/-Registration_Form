@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport">
+        <title>Student Registration Form</title>
+        <style>
+            .block {
+                display: block;
+                width: 95%;
+                border: none;
+                background-color: rgb(5, 173, 5);
+                color:#ffffff;
+                padding: 14px 28px;
+                text-align: center;
+                font-size: 18px;
+
+            }
+
+            .block:hover {
+                background-color: aliceblue;
+                color: black;
+            }
+        </style>
+
+    </head>
+    <body style="background-color:rgb(89, 222, 240);">
+        <h1 align="center">Student Registration Form</h1>
+        <hr style="color: #ffffff;"><br>
+        <div>
+
+            <form>
+                
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="" placeholder="Firstname" size="200" required style="padding: 12px;"><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="" placeholder="Lastname" size="200" required style="padding: 12px;"><br><br>
+                <label for="Mname">MiddleName:</label><br>
+                <input type="text" id="Mname" name="Mname" value="" placeholder="Middelname" size="200" required style="padding: 12px;"><br><br><br>
+                <label for="Course">Course:</label>
+                <select id="Course" name="Course" required>
+                    <option value="W3Schools">W3Schools</option>
+                    <option value="Udemy">Udemy</option>
+                    <option value="freecodecamp">freecodecamp</option>
+                    <option value="IELI">IELI</option>
+                </select>
+                <br>
+                
+                <p>Gender:</p>
+                <input type="radio" id="male" name="fav_language" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="fav_language" value="Female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="fav_language" value="Other" required>
+                <label for="other">Other</label>
+                <br>
+                <p>Phone:</p>
+                <tabel>
+
+                <tr><td>+93</td></tr><br>
+                
+                </tabel><br>
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="phone no" required size="200" maxlength="15" style="padding: 12px;" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                <label for="Current-address">Current Address:</label><br>
+                <textarea name="message" rows="10" cols="155" placeholder="Current Password"required ></textarea><br><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="Email" size="200" placeholder="Enter Email" style="padding: 12px;"><br><br><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" size="200" placeholder="Enter Password" required style="padding: 12px;" pattern="(?=.*\d)(?=.*[a-z](?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowrecase letter, and at least 8 or more characters"><br><br>
+                <label for="pwd">Re-type Password:</label><br>
+                <input type="password" id="pwd" name="pdw" size="200" placeholder="Retype Password" required style="padding: 12px;" pattern="(?=.*\d)(?=.*[a-z](?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowrecase letter, and at least 8 or more characters"><br><br>
+                
+                <button class="block">Register</button>
+            
+            
+                </form>
+            
+           
+    </body>
+</html>
